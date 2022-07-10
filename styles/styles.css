@@ -111,7 +111,6 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 180px;
     margin-left: 10%;
 }
 
@@ -128,4 +127,13 @@ h1 {
 .navigation-link {
     text-decoration: none;
     color: #50614A;
+}
+
+.plant-down-1 {
+    margin-bottom: -60px;
+}
+
+.plant-down-2 {
+    margin-left: 550px;
+    margin-bottom: -60px;
 }
