@@ -137,3 +137,28 @@ h1 {
     margin-left: 550px;
     margin-bottom: -60px;
 }
+
+.navigation-link:hover {
+    border-bottom: 3px solid #829577;
+}
+
+/* howitworks */
+
+.jungle {
+    font-family: "LoveYaLikeASister";
+    font-size: 60px;
+    line-height: 80px; 
+    text-align: center;
+    margin: 10px 0 0px 0;
+}
+
+.mark-2 {
+    background-image: url(../images/Blob.svg);
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position-x: center;
+}
+
+.mini-jungle {
+    margin: 0 50px 50px 100px;
+}
