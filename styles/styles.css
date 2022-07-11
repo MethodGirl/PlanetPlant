@@ -162,3 +162,119 @@ h1 {
 .mini-jungle {
     margin: 0 50px 50px 100px;
 }
+
+/* catalog */
+
+.main-catalog {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.plants-sort-tittle {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.select-control {
+    margin-right: 130px;
+    margin-left: 125px;
+}
+
+
+
+.product-catalog {
+    display: flex;
+    margin-top: 45px;
+}
+
+.product-card {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    background-color: #829577;
+    border-radius: 20px;
+    width: 228px;
+}
+
+
+.product-card-link {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.product-card-title {
+    display: flex;
+    margin-left: -7px;
+}
+
+.product-price-name {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f2f2;
+    display: flex;
+    margin-left: -261px;
+    margin-top: 270px;
+}
+
+.general-results {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f2f2;
+    display: flex;
+}
+
+.product-card-button.favorites {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 80px;
+}
+
+.rating {
+    display: flex;
+    margin-top: 325px;
+    margin-left: -240px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+
+.plant-picture {
+    margin-left: 16px;
+}
+
+.product-card-2 {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    background-color: #829577;
+    border-radius: 20px;
+    width: 228px;
+}
+
+.page-footer-catalog {
+    background-image: url(../images/soil\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding-top: 300px;
+}
+
