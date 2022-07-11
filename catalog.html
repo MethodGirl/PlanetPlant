@@ -9,7 +9,8 @@
 <body>
     <header class="page-header"></header>
     <div class="filter">
-        <div class="hotel-sort-tittle">Найдено товаров: 106</div>
+        <div class="plants-sort-tittle">Найдено товаров: 106</div>
+        <img src="/images/logo.svg">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -26,12 +27,18 @@
           </li>
         </ul>
         </div>
-    <main>
+    <main class="main-catalog">
+        <div class="product-catalog">
+        <li class="product-card">
+          <a class="product-card-link" href="product.html">
+            <img class="plant-picture" src="/images/plants-1.png" width="200" height="206" alt="Эхинокактус радуга">
+            <b class="product-card-title">Эхинокактус радуга ø8 h15 см</b>
+          </a> 
+        </li> 
             <div class="product-price-name">
               <p class="product-card-price">633 &#8381;/шт</p>
               <a class="product-card-button favorites" href="#">В избранное</a>
             </div>
-          </div>
           <div class="general-results">
             <div class="rating-result">
               <span class="star"></span>
@@ -41,14 +48,49 @@
             </div>
             <p class="rating">9 отзывов</p>
           </div>
+        </div>
         </li>
-        <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="hotel-picture" src="/images/эхинокактус.jpg" width="300" height="206" alt="Эхинокактус радуга">
-            <b class="product-card-title">Эхинокактус радуга ø8 h15 см<</b>
-          </a>  
+        <div class="product-catalog">
+            <li class="product-card-2">
+              <a class="product-card-link" href="product.html">
+                <img class="plant-picture" src="/images/plants-2.png" width="200" height="206" alt="Эхинокактус радуга">
+                <b class="product-card-title">Рипсалидопсис микс 9х20 см</b>
+              </a> 
+            </li> 
+                <div class="product-price-name">
+                  <p class="product-card-price">277 &#8381;/шт</p>
+                  <a class="product-card-button favorites" href="#">В избранное</a>
+                </div>
+              <div class="general-results">
+                <div class="rating-result">
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                  <span class="star"></span>
+                </div>
+                <p class="rating">3 отзыва</p>
+              </div>
+            </div>
+            </li>
+            <div class="product-catalog">
+                <li class="product-card-2">
+                  <a class="product-card-link" href="product.html">
+                    <img class="plant-picture" src="/images/plants-3.png" width="200" height="206" alt="Эхинокактус радуга">
+                    <b class="product-card-title">Насекомоядный микс d9 h10</b>
+                  </a> 
+                </li> 
+                    <div class="product-price-name">
+                      <p class="product-card-price">655 &#8381;/шт</p>
+                      <a class="product-card-button favorites" href="#">В избранное</a>
+                    </div>
+                  <div class="general-results">
+                    <p class="rating">0 отзывов</p>
+                  </div>
+                </div>
+                </li>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer-catalog">
         <nav class="navigation-footer">
             <ul class="navigation-list">
               <li class="navigation-link-current">
@@ -58,7 +100,7 @@
                 <a class="navigation-link show-more" href="howitworks.html">How it works</a>
               </li>
               <li class="navigation-link-current">
-                <a class="navigation-link catalog">Shop</a>
+                <a class="navigation-link catalog" href="catalog.html">Shop</a>
               </li>
             </ul>
           </nav>
