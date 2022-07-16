@@ -79,6 +79,7 @@ body {
     background-repeat: no-repeat;
     background-size: 90px;
     background-position-y: 6px;
+    background-position-x: 26px;
 }
 
 h1 {
@@ -167,7 +168,6 @@ h1 {
 
 .main-catalog {
     display: flex;
-    justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -175,27 +175,31 @@ h1 {
 
 .filter {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
 }
 
 
 .plants-sort-tittle {
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 36px;
 }
 
 .select-control {
-    margin-right: 130px;
-    margin-left: 125px;
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #829577;
+    border: none;
+    margin-right: 30px;
 }
-
 
 
 .product-catalog {
     display: flex;
     margin-top: 45px;
+    flex-basis: 33.333333%;
 }
 
 .product-card {
@@ -278,3 +282,162 @@ h1 {
     padding-top: 300px;
 }
 
+.catalog-filter-group {
+    width: 170px;
+    border: none;
+}
+
+.catalog-filter {
+    margin-top: 39px;
+}
+
+.catalog-filter-list {
+    list-style-type: none;
+    padding: initial;
+}
+
+.button {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f2f2f2;
+    background-color: #829577;
+    border: 3px solid #829577;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 16px;
+}
+
+.logo-catalog {
+    margin: 0px 50%
+}
+
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visual-of-page {
+    display: flex;
+    margin-right: 73px;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.control-cards-list::before {
+    content: url(/images/mode-list-3.svg);
+    width: 16px;
+    height: 14px;
+}
+
+.control-input-visual:checked+.control-cards {
+    border: #829577 solid 1px;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.control-cards-cards::before {
+    content: url(/images/mode-tile-1.svg);
+    width: 16px;
+    height: 14px;
+}
+
+.control-input-visual {
+    display: none;
+}
+
+.visual-cards.cards {
+    margin-right: 10px;
+}
+
+.radio {
+    position: relative;
+}
+
+.radio-label {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #829577;
+}
+
+.radio-label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.radio-label::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(/images/circle.svg) no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.radio-input:checked + .radio-label::after {
+    opacity: 1;
+}
+
+.input-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.chekbox {
+    position: relative;
+}
+
+.label-checkbox {
+    font-family: "LoveYaLikeASister-Regular";
+    font-size: 18px;
+    line-height: 21px;
+    color: #829577;
+    padding-left: 20px;
+}
+
+.label-checkbox::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.label-checkbox::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(/images/okay.svg) no-repeat;
+    background-size: 12px 10px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.input-checkbox:checked + .label-checkbox::after {
+    opacity: 1;
+}
