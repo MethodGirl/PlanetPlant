@@ -7,27 +7,83 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="page-header"></header>
-    <div class="filter">
+    <header>
+    <img src="/images/logo.svg" class="logo-catalog">
+    </header>
+        <div class="filter">
         <div class="plants-sort-tittle">Найдено товаров: 106</div>
-        <img src="/images/logo.svg">
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
+          <option value="cheap">Цена по возрастанию</option>
+          <option value="expensive">Цена по убыванию</option>
+          <option value="popular">Рейтинг</option>
+          <option value="recommendation">Рекомендуем</option>
         </select>
         <ul class="visual-of-page">
           <li class="visual-cards cards">
-            <input class="control-input control-input-cards" type="radio" name="view-type" id="control-input-cards" value="cards">
+            <input class="control-input-visual control-input-cards" type="radio" name="view-type" id="control-input-cards" value="cards">
             <label class="control-cards control-cards-cards" for="control-input-cards"></label>
           </li>
           <li class="visual-list cards">
-            <input class="control-input control-input-list" type="radio" name="view-type" id="control-input-list" value="list">
+            <input class="control-input-visual control-input-list" type="radio" name="view-type" id="control-input-list" value="list">
             <label class="control-cards control-cards-list" for="control-input-list"></label>
           </li>
         </ul>
         </div>
+        
     <main class="main-catalog">
+        <aside>
+            <div class="filter">
+        <form class="catalog-filter" method="get">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Растения</legend>
+          <ul class="catalog-filter-list">
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_1" name="aloe" checked>
+                <label class="label-checkbox" for="checkbox_1">Алоэ</label>
+            </li>
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_2" name="gasteria">
+                <label class="label-checkbox" for="checkbox_2">Гастерия</label>
+            </li>
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_3" name="cactus">
+                <label class="label-checkbox" for="checkbox_3">Кактус</label>
+            </li>
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_4" name="succulent">
+                <label class="label-checkbox" for="checkbox_4">Суккулент</label>
+            </li>
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_5" name="ficus">
+                <label class="label-checkbox" for="checkbox_5">Фикус</label>
+            </li>
+            <li class="chekbox">
+                <input class="input-checkbox" type="checkbox" " id="checkbox_6" name="hawortia">
+                <label class="label-checkbox" for="checkbox_6">Хавортия</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Страна производства</legend>
+          <ul class="catalog-filter-list">
+                <li class="radio">
+                    <input class="radio-input" type="radio" id="radio_1" name="product-group" value="shaving-supplies" checked>
+                    <label class="radio-label" for="radio_1">Нидерланды</label>
+                </li>
+                <li class="radio">
+                    <input class="radio-input" type="radio" id="radio_2" name="product-group" value="care-products">
+                    <label class="radio-label" for="radio_2">Россия</label>
+                </li>
+                <li class="radio">
+                    <input class="radio-input" type="radio" id="radio_3" name="product-group" value="accessories">
+                    <label class="radio-label" for="radio_3">Не указано</label>
+                </li>
+              </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+    </form>
+        </aside>
+        <div class="all-products">
         <div class="product-catalog">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
@@ -89,18 +145,51 @@
                   </div>
                 </div>
                 </li>
+                <div class="product-catalog">
+                    <li class="product-card-2">
+                      <a class="product-card-link" href="product.html">
+                        <img class="plant-picture" src="/images/plants-4.png" width="200" height="206" alt="Эхинокактус радуга">
+                        <b class="product-card-title">Алое микс 12х15 см</b>
+                      </a> 
+                    </li> 
+                        <div class="product-price-name">
+                          <p class="product-card-price">398 &#8381;/шт</p>
+                          <a class="product-card-button favorites" href="#">В избранное</a>
+                        </div>
+                      <div class="general-results">
+                        <p class="rating">5 отзывов</p>
+                      </div>
+                    </div>
+                    </li>
+                    <div class="product-catalog">
+                        <li class="product-card-2">
+                          <a class="product-card-link" href="product.html">
+                            <img class="plant-picture" src="/images/plants-5.png" width="200" height="206" alt="Эхинокактус радуга">
+                            <b class="product-card-title">Суккулент Хавортия Спайдер Вайт ø8 h10-15 см</b>
+                          </a> 
+                        </li> 
+                            <div class="product-price-name">
+                              <p class="product-card-price">522 &#8381;/шт</p>
+                              <a class="product-card-button favorites" href="#">В избранное</a>
+                            </div>
+                          <div class="general-results">
+                            <p class="rating">1 отзыв</p>
+                          </div>
+                        </div>
+                        </li>
+                </div>
     </main>
     <footer class="page-footer-catalog">
         <nav class="navigation-footer">
             <ul class="navigation-list">
               <li class="navigation-link-current">
-                <a class="navigation-link main-page" href="index.html">Home</a>
+                <a class="navigation-link main-page" href="index.html">Главная</a>
               </li>
               <li class="navigation-link-current">
-                <a class="navigation-link show-more" href="howitworks.html">How it works</a>
+                <a class="navigation-link show-more" href="howitworks.html">Корзина</a>
               </li>
               <li class="navigation-link-current">
-                <a class="navigation-link catalog" href="catalog.html">Shop</a>
+                <a class="navigation-link catalog" href="catalog.html">Магазин</a>
               </li>
             </ul>
           </nav>
